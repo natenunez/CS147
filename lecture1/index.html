@@ -3,7 +3,11 @@
 	<head>
 		<title>MyApp</title>
 	</head>
-	
+	<link rel="apple-touch-icon" href="appicon.png" />
+	<link rel="apple-touch-startup-image" href="startup.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-webapp-status-bar-style" content="black" />
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
 	<style type="text/css">
 		body {
 					background:#eee;
@@ -13,6 +17,26 @@
 					font-size:22px;
 					font-weight:300;
 					color:#aaa;
+				}
+				#assignments {
+					background:#fff;
+				}
+				.newheader {
+					color:#000;
+				}
+				.opacity {
+					opacity:1;
+				}
+				.button {
+					background:#333;
+								width:100px;
+								color:#fff;
+								height:20px;
+							     -moz-border-radius: 20px;
+							    -webkit-border-radius: 20px;
+							    -khtml-border-radius: 20px;
+							    border-radius: 20px;
+							    text-align:center;
 				}
 	</style>
 	
@@ -26,13 +50,18 @@
 			<li>Learn HTML</li>
 		</ul>
 	
-		<h3>A nice button</h3>
-
-		<h3>An invisible seal</h3>
+		<h3 class="newheader">A nice button</h3>
+			<div class="button"><a href="http://www.facebook.com" target="_blank">Click me</a></div>
+			
+		<h3>A visible seal</h3>
+			<p><img width="100" class="opacity" src="seal.png" /></p>
 
 		<h3>A video</h3>
+			<video width="300" height="240" controls="controls">
+				<source src="gizmo.mp4" type="video/mp4" />
+			</video>
 
 		<h3>Two boxes side by side</h3>
-
+		
 	</body>
 </html>
